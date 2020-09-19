@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Idea</title>
+</head>
+<body>
+
+<a href = "6. Links to what i used.html"> Links to what i used </a>
+
+<h1>Assignment 1 - Project Idea</h1>
+<br>
+<br>
+<b>Thomas Maurice James Harlow - s3875137</b>
+<br>
+<br>
+<b> Monitor program for the home WiFi</b>
+<br>
+<br>
+<b>Overview (100 words) - This should be a summary of what the project will be</b>
+<p>My project idea is for another way to protect your home wifi connection and the devices that are currently connected e.g phones, laptops, tablets and many more devices, so that any unrecognised devices can be denied access, 
+it'll be a form of Wireless Intrusion Prevention Systems (WIPS). Using a Raspberry Pi as a DHCP (Dynamic Host Configuration Protocol) server connected to your wifi to keep track of when unrecognised devices try to join the home network 
+and attempt to do anything with malicious intent in mind or to even just to use your data, the program give you a notifcation and the option to allow or deny the device.
+
+
+<br>
+<br>
+<b>Motivation (100) words) - This should be a description of why the project will be interesting or useful.</b>
+
+<p>The motivation behind this project for me is that i want to learn how to be a Penetration Tester in a Red Team (Offensive security) and i wanted to look into a project idea that is focused on security.
+Millions of people around the world use WiFi at home with many of their devices being connected, so we (my I.T friend that gave me the idea) thought a program that helps monitor who is joining and secures the home connection so whoever is intruding isn't able to poke 
+around on the network or port scan to find open ports to try and do anything malicious, and also learn how to better understand intrusion prevention techniques for my Ideal Job.
+
+<br>
+<br>
+<b>Description (500 words) - Detailed description of the features of the product or service.</b>
+<p>The purpose of the program will be to monitor the wireless network to identify new (unrecognised) devices. Wireless networks are susceptible to compromise due to the nature communication used, with most typical home wireless networks using WPA2 Pre-Shared Key (PSK). If an attacker is in range of these networks then they may be able to compromise the integrity of the network via a range of attacks. 
+By identifying devices by their MAC (Media Access Control) address and mapping them to the known (trusted) user devices, it would be possible to limit the possibility of compromise while increasing visibility of network usage. Any unknown devices that appear on the network could then be quarantined until such time as they could be verified. It is important to note that this solution is intended for use on typical small home networks and the solution would be unsuitable for medium/large scale networks (e.g. corporate) as the manual verification would become too great an overhead.
+A Raspberry Pi or similar device would be sufficient to act as an 'always on' proxy and DHCP server (controller) which could also host the logic (e.g. bash/Python script) required to process and interrogate the devices joining the network. Alerts relating to new unrecognised hosts joining the networks could be sent via:</p> 
+- Integration with a suitable SMS service API (Application Programming Interface) to a specified phone number (i.e. network owner/admin). <br>
+- Triggered communication to a mobile application controlled by the network owner/admin. This communication could be 2-way, meaning that logic could be included allowing the mobile application to communicate directly to the controller (Raspberry Pi logic) allowing actions to be taken (i.e. approve/quarantine devices).<br>
+- Local hardware such as physical LED lighting/screens or speakers attached to the Raspberry Pi.<br>
+- IOT LED lighting/screens or speakers reachable from the Raspberry Pi.<br>
+<br>
+<p>Two possible attack vectors which can follow the compromise of a wireless home network are:<br>
+1. Using the access to launch attacks on targets via the internet<br>
+2. Attacking clients on the local network<br>
+A combination of access-control technologies and defences will be required to mitigate these attacks.<br>
+The solution should be completely managed from the Raspberry Pi, with limited configuration required on the router/gateway/access point itself. This is a deliberate decision in order to avoid compatibility issues brands/models of network devices.</p>
+<br>
+
+
+
+
+<br>
+<br>
+<b>Tools and Technologies (100) words) - Describe the software, hardware and/or other equipment needed. Include
+any relevant open source tools as appropriate.</b>
+<p>The hardware/technologies in use would include but may not be limited to:</b> <br>
+- Scripting language (e.g. Bash, Python etc.) for access control logic script<br>
+- MAC address information tool - (Media Access Control) (e.g. https://github.com/ScriptTiger/MAC-Address-Lookup)<br>
+- DHCP server (Dynamic Host Configuration Protocol) - DHCP assigns an IP address to devices on the network so they can communicate with other IP networks <br>
+- Proxy server - A proxy server retrieves data on the internet on behalf of the user. <br>
+- Raspberry Pi + breadboard accessories (e.g. lights, speakers, buttons etc.), The Raspberry Pi is hardware that was chosen for the ease of user end experience, low power consumption, and its simple customisability <br>
+- API integration with SMS service - (Application Programming Interface) . <br>
+- Simple mobile application<br>
+
+
+
+
+
+
+<br>
+<br>
+<b>Skills Required (100 words) - List the skills are required for your project, including software that needs to be
+written, and special hardware (if any). How feasible will it be to find the skills, software and hardware required?</b>
+<p>Basic hardware skills for the Raspberry Pi since there are videos on Youtube with tutorials on how to setup DHCP (Dynamic Host Configuration Protocol) servers on the hardware, coding should be entry level and learn as you go, 
+but will need more experience with the Python language and to need a foundational understanding of network programming. Software will need to be written to track and identify when unknown device joins and allow access or deny the request.</p>
+
+<p>The ability to find the hardware and software shouldn't be too hard to find, there are plenty of tutorials on youtube and on the internet that can help with the setup of the server. 
+The Raspberry Pi and it's components can easily be ordered online or instore from computer stores.</p>
+
+
+<br>
+<br>
+<b>Outcome (100 words) - If the project is successful, what will be the outcome? How will the original problem besolved? What impact will this development have?</b>
+<p>If the project is successful, some parts may need to changed, but the outcome will be another way to protect your home network and devices from unwanted and unrecognised intrusion, after it is proven to work it will hopefully be easy
+to set up for anyone to protect their own home and devices from intrusions.</p>
+<p>The program will solve the problem of having any unrecognised devices that are trying to join your network from getting in and either mooching off your data or have the intent to do anything malicious.  Not quite sure of the impact
+but it would allow more protection for your network.</p>
+<br>
+<br>
+<b>I couldn't come up with any ideas so i asked my I.T friend and he's the one that helped me come up with this idea.</b>
+<br>
+
+<a href = "6. Links to what i used.html"> Links to what i used </a>
+
+
+</body>
+
+</html>
+
